@@ -1,0 +1,7 @@
+{
+  "name": "Configuratore Horizon ",
+  "description": "A multi-step professional configurator for assessing photovoltaic system feasibility on land or industrial areas.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
