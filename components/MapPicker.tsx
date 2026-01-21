@@ -309,7 +309,7 @@ const MapPicker: React.FC<MapPickerProps> = ({
           }}
         />
 
-        <div className="absolute bottom-6 right-14  flex flex-col gap-3 z-[60]">
+        <div className="absolute bottom-2 right-14  flex flex-col gap-3 z-[60]">
           <button
             onClick={toggleDrawing}
             className={`flex items-center justify-center gap-2 py-3 px-5 font-bold shadow-2xl text-[12px] md:text-base ring-2 ring-black/5   ${
