@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Valorizza il tuo terreno industriale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <style>
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-slide-in {
+        animation: slideIn 0.3s ease-out forwards;
+      }
+      .gm-style-mtc,
+      .gm-svpc,
+      .gm-style-pbc {
+        display: none !important;
+      }
+      body {
+        background-color: #2e62ab;
+      }
+
+      /* Personalizzazione Cursore Range (Pallino) */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 24px;
+        width: 24px;
+        background: #ffffff;
+        cursor: pointer;
+        border: 4px solid #d8d900;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease;
+        margin-top: -1px; /* Centratura rispetto alla traccia */
+      }
+
+      input[type="range"]::-webkit-slider-thumb:hover {
+        transform: scale(1.1);
+        background: #d8d900;
+        border-color: #ffffff;
+      }
+
+      input[type="range"]::-moz-range-thumb {
+        height: 24px;
+        width: 24px;
+        background: #ffffff;
+        cursor: pointer;
+        border: 4px solid #d8d900;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease;
+        border-radius: 0;
+      }
+
+      input[type="range"]::-moz-range-thumb:hover {
+        transform: scale(1.1);
+        background: #d8d900;
+        border-color: #ffffff;
+      }
+
+      /* Personalizzazione Checkbox GDPR */
+      input[type="checkbox"] {
+        accent-color: #d8d900;
+        cursor: pointer;
+      }
+    </style>
+
+    <link rel="stylesheet" href="/index.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+          "react/": "https://esm.sh/react@^19.2.3/",
+          "react": "https://esm.sh/react@^19.2.3"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Cbe6yesf.js"></script>
+  </head>
+  <body class="text-slate-900">
+    <div id="root"></div>
+  </body>
+</html>
