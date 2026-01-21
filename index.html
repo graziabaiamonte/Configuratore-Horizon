@@ -2,16 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Valorizza il tuo terreno industriale</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
     <style>
-      #map {
-        width: 100%;
-        height: 450px;
-        border-radius: 0;
-      }
       @keyframes slideIn {
         from {
           opacity: 0;
@@ -32,6 +30,48 @@
       }
       body {
         background-color: #2e62ab;
+      }
+
+      /* Personalizzazione Cursore Range (Pallino) */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 24px;
+        width: 24px;
+        background: #ffffff;
+        cursor: pointer;
+        border: 4px solid #d8d900;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease;
+        margin-top: -1px; /* Centratura rispetto alla traccia */
+      }
+
+      input[type="range"]::-webkit-slider-thumb:hover {
+        transform: scale(1.1);
+        background: #d8d900;
+        border-color: #ffffff;
+      }
+
+      input[type="range"]::-moz-range-thumb {
+        height: 24px;
+        width: 24px;
+        background: #ffffff;
+        cursor: pointer;
+        border: 4px solid #d8d900;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease;
+        border-radius: 0;
+      }
+
+      input[type="range"]::-moz-range-thumb:hover {
+        transform: scale(1.1);
+        background: #d8d900;
+        border-color: #ffffff;
+      }
+
+      /* Personalizzazione Checkbox GDPR */
+      input[type="checkbox"] {
+        accent-color: #d8d900;
+        cursor: pointer;
       }
     </style>
     <script type="importmap">
